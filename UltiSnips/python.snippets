@@ -132,9 +132,9 @@ endsnippet
 
 snippet doc "docstring"
 """
-@Author: ${1:`wklken`}
-@Email: ${2:`wklken@yeah.net`}
-@Date: ${3}
+@Author: ${1:`!v g:snips_author`}
+@Email: ${2:`!v g:snips_author_email`}
+@Date: ${3: `!v strftime("%Y-%m-%d %H:%M:%S")`}
 @Desc: ${4}
 """
 endsnippet
