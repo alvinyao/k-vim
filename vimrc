@@ -45,7 +45,7 @@ filetype plugin indent on
 
 "以下配置有详细说明，一些特性不喜欢可以直接注解掉
 
-"set guifont=Monaco:h20          " 字体 && 字号
+set guifont=Monaco:h20          " 字体 && 字号
 
 " history存储容量
 set history=2000
@@ -133,7 +133,7 @@ set showcmd
 set showmode
 
 " 在上下移动光标时，光标的上方或下方至少会保留显示的行数
-set scrolloff=7
+" set scrolloff=7
 
 " set winwidth=79
 
@@ -493,6 +493,8 @@ autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 autocmd FileType javascript set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType html set tabstop=2 shiftwidth=2 expandtab ai
 autocmd FileType xml set tabstop=2 shiftwidth=2 expandtab ai
+autocmd FileType yml set tabstop=2 shiftwidth=2 expandtab ai
+autocmd FileType yaml set tabstop=2 shiftwidth=2 expandtab ai
 
 " 保存python文件时删除多余空格
 fun! <SID>StripTrailingWhitespaces()
@@ -558,8 +560,8 @@ endif
 
 " theme主题
 set background=dark
-colorscheme solarized
-set t_Co=256
+"colorscheme solarized
+" set t_Co=256
 
 " colorscheme molokai
 " let g:molokai_original = 1
